@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solutions</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+
+    <!--NAV-->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#products-services">Products & Services</a>
+        <a href="#blog-resources">Blog & Resources</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <!--HOME SECTION-->
+    <div id="home">
+
+        <div class="home-card">
+
+            <img src="finalimages/greentech.png"
+            alt="GreenTech Solutions Company Logo">
+
+            <h1>Our Mission</h1>
+
+        <div class="mission-statement">
+            <p>
+                GreenTech Solutions develops eco-friendly technology designed to help businesses and individuals reduce their environmental impact through smart, sustainable solutions.
+            </p>
+        </div>
+
+        <div class="home-section">
+
+            <h2>Live Environmental Impact</h2>
+
+            <p class="impact-text">
+                Estimated Pounds of CO₂ Emissions Reduced
+            </p>
+
+
+         <p id="counter">0</p>
+
+        </div>
+
+        <div class="home-section">
+
+            <h2>Our Key Services</h2>
+
+            <ul class="services-list">
+                <li>⚡ Energy-Efficient Devices</li>
+                <li>♻️ Smart Recycling System</li>
+                <li>🌍 Carbon Tracking Software</li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+    <!--ABOUT US-->
+    <div id="about-us">
+        <h1>About Us</h1>
+
+        <img src="finalimages/aboutus.jpg"
+        alt="Animated character representing our employees"
+        width="500">
+
+        <p> We are passionate about creating and promoting sustainability through technology by offering products like energy-efficient devices, smart recycling systems, and carbon tracking software. We aim to educate and engage our audience about environmental issues while showcasing our products and services.
+        </p>
+
+        <br><br>
+        <h2>Company Milestones</h2>
+    
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>2021</h3>
+                 <p>GreenTech Solutions Founded</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2022</h3>
+                <p>Released Carbon Tracking Software</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2023</h3>
+                <p>Partnered with Over 100 Businesses</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2024</h3>
+                <p>Expanded Sustainable Technology Services Nationwide</p>
+            </div>
+        </div>
+    </div>
+
+    <!--PRODUCTS & SERVICES-->
+    <div id="products-services">
+
+        <h1>Products & Services</h1>
+
+        <!--SEARCH BAR-->
+        <div class="search-container">
+            <input
+            type="text"
+            id="productSearch"
+            placeholder="Search Products...">
+        </div>
+
+        <br><br>
+
+        <table id="productTable">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+
+            <tr data-category="energy">
+                <td>Eco Energy Monitor</td>
+                <td>Tracks and reduces business energy usage.</td>
+                <td>
+                    <img src="finalimages/ecoem.jpg" 
+                    alt="Picture of Eco Energy Monitor"
+                    width="100">
+                </td>
+            </tr>
+
+            <tr data-category="recycling">
+                <td>RecycleSmart System</td>
+                <td>Improves recycling efficiency in workplaces.</td>
+                <td>
+                    <img src="finalimages/recycless.jpg"
+                    alt="Picture of RecycleSmart System Application Logo"
+                    width="100">
+                </td>
+            </tr>
+
+            <tr data-category="carbon">
+                <td>CarbonTrack Software</td>
+                <td>Measures and monitors carbon emissions.</td>
+                <td> 
+                    <img src="finalimages/carbonts.png"
+                    alt="Picture of CarbonTrack Software Application Logo"
+                    width="100">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!--BLOGS & RESOURCES-->
+    <div id="blog-resources">
+        <h1>Blogs and Resources</h1>
+
+        <img src="finalimages/rcf.png"
+        alt="Picture describing ways to reduce CO2"
+        width="400">
+
+        <p>
+            Explore eco-friendly strategies for small businesses and practical sustainability tips for everyday life!
+        </p>
+
+        <ul>
+            <li>
+                <strong>3 Ways Businesses Can Reduce Energy Waste</strong>
+                <button onclick="toggleText(this)">Read More</button>
+
+                <p class="hidden-text">
+                    Businesses can reduce energy waste by switching to LED lights, turning off equipment when not in use, and utilize smart thermostats.
+                </p>
+            </li>
+            
+            <li>
+                <strong>Reduce Your Carbon Footprint</strong>
+                <button onclick="toggleText(this)">Read More</button>
+
+                <p class="hidden-text">
+                    You can reduce your carbon footprint by recycling more, choosing public transportation, and limiting electricity use.
+                </p>
+            </li>
+
+        </ul>
+    </div>
+
+    <!--CONTACT PAGE-->
+    <div id="contact">
+
+        <h1>Contact Us</h1>
+        <br>
+        
+        <p>📞 Phone: (111) 123-4567</p>
+        <p>📧 Email: contact@greentechsolutions.com</p>
+        <p>📍 Address: 123 Green Road, Albuquerque, NM</p>
+
+        <br>
+
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <form id="newsletterForm">
+            <label for="subscriber-name">Name:</label>
+            <br>
+
+            <input type="text" id="subscriber-name" name="subscriber-name" placeholder="Enter your name">
+            <br><br>
+
+            <label for="subscriber-email">Email:</label>
+            <br>
+
+            <input type="email" id="subscriber-email" name="subscriber-email" placeholder="Enter your email">
+            
+            <br><br>
+
+            <button type="submit">Subscribe</button>
+
+            <p id="subscribe-message"></p>
+
+        </form>
+    </div>
+    <script src="final.js"></script>
+</body>
+</html>
